@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Invitación XV – Danna Isabella</title>
+    <meta
+      name="description"
+      content="Invitación digital de XV años de Danna Isabella Machado González con cuenta regresiva, confirmación por WhatsApp y música de fondo."
+    />
+    <meta property="og:title" content="XV – Danna Isabella" />
+    <meta
+      property="og:description"
+      content="Acompáñame el 30 de agosto, 8:00 pm. Confirma tu asistencia por WhatsApp."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://i.pinimg.com/236x/9b/a0/fc/9ba0fc190ced52afc06936acac87a309.jpg"
+    />
+    <meta property="og:locale" content="es_CO" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --lila: #8e65c2; /* primario */
+        --lila-osc: #6f4ca6; /* oscuro */
+        --lila-claro: #e9ddff; /* claro */
+        --dorado: #d4af37;
+        --negro: #1a1a1a;
+        --blanco: #ffffff;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(180deg, var(--lila-claro), #fff);
+        color: var(--negro);
+        font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto,
+          Helvetica, Arial, sans-serif;
+      }
+      a {
+        color: inherit;
+      }
+      .container {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .hero {
+        position: relative;
+        border-radius: 28px;
+        overflow: hidden;
+        min-height: 74vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+        /* background: url("https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1600&auto=format&fit=crop") */
+        background: url("https://i.pinimg.com/736x/f8/d6/ca/f8d6cab02c36ab8c7185e26a04429bb2.jpg")
+          center/cover no-repeat;
+        isolation: isolate;
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.35),
+          rgba(0, 0, 0, 0.55)
+        );
+        z-index: 0;
+      }
+      .hero-inner {
+        position: relative;
+        z-index: 1;
+        padding: 40px 18px;
+      }
+      .badge {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.18);
+        backdrop-filter: blur(6px);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        font-size: 14px;
+      }
+      .name {
+        font-family: "Playfair Display", serif;
+        font-weight: 700;
+        font-size: clamp(36px, 6vw, 68px);
+        line-height: 1.1;
+        margin: 14px 0;
+      }
+      .sub {
+        font-size: 18px;
+        opacity: 0.95;
+        margin-bottom: 22px;
+      }
+      .countdown {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+      .cd-box {
+        min-width: 88px;
+        padding: 14px 10px;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+      }
+      .cd-num {
+        font-family: "Playfair Display", serif;
+        font-size: 34px;
+        font-weight: 700;
+      }
+      .cd-lbl {
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        opacity: 0.9;
+      }
+
+      .card {
+        border-radius: 24px;
+        background: #fff;
+        box-shadow: 0 10px 40px rgba(20, 10, 50, 0.08);
+        padding: 26px;
+        margin-top: -42px;
+        position: relative;
+        z-index: 2;
+      }
+      .title {
+        font-family: "Playfair Display", serif;
+        font-size: 26px;
+        margin: 0 0 12px;
+        color: var(--lila-osc);
+      }
+      .grid {
+        display: grid;
+        gap: 18px;
+      }
+      @media (min-width: 720px) {
+        .grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      .info {
+        padding: 16px;
+        border: 1px dashed var(--lila);
+        border-radius: 16px;
+        background: linear-gradient(180deg, #fff, #fcf9ff);
+      }
+      .info h4 {
+        margin: 0 0 8px;
+        font-size: 16px;
+        color: var(--lila-osc);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+      .info p {
+        margin: 0;
+        font-size: 16px;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 18px;
+      }
+      .btn {
+        appearance: none;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 14px 18px;
+        border-radius: 14px;
+        font-weight: 600;
+        transition: transform 0.08s ease, box-shadow 0.2s;
+      }
+      .btn-primary {
+        background: var(--lila);
+        color: #fff;
+        box-shadow: 0 8px 20px rgba(110, 70, 170, 0.35);
+      }
+      .btn-primary:active {
+        transform: translateY(1px);
+      }
+      .btn-outline {
+        background: #fff;
+        border: 2px solid var(--lila);
+        color: var(--lila);
+      }
+
+      .note {
+        margin-top: 8px;
+        font-size: 14px;
+        color: #4b3d6b;
+      }
+      .divider {
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--lila-claro),
+          transparent
+        );
+        margin: 26px 0;
+      }
+      .muted {
+        opacity: 0.85;
+      }
+
+      /* Floating music control */
+      .music-btn {
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: var(--lila);
+        color: #fff;
+        box-shadow: 0 10px 30px rgba(110, 70, 170, 0.45);
+        cursor: pointer;
+        border: none;
+        font-size: 22px;
+      }
+      .music-btn[aria-pressed="true"] {
+        background: var(--lila-osc);
+      }
+
+      footer {
+        padding: 30px 0 60px;
+        text-align: center;
+        color: #6a6280;
+      }
+      .reserved {
+        display: inline-block;
+        margin-top: 8px;
+        padding: 6px 10px;
+        border-radius: 12px;
+        background: var(--lila-claro);
+        color: var(--lila-osc);
+        font-weight: 600;
+      }
+
+      .watermark {
+        position: fixed;
+        left: 12px;
+        bottom: 12px;
+        font-size: 12px;
+        color: #7a6aa6;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <audio id="bgm" preload="auto" loop>
+      <!-- ⚠️ Asegúrate de tener permiso para usar este audio o sustitúyelo por uno con derechos autorizados. -->
+      <source
+        src="https://eventobonito.com/wp-content/uploads/2024/02/Thinking-Out-Loud-Violin-Cover-Robert-Mendoza.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <div class="container">
+      <section
+        class="hero"
+        role="banner"
+        aria-label="Invitación XV Danna Isabella"
+      >
+        <div class="hero-inner">
+          <span class="badge">Mis 15 Años</span>
+          <h1 class="name">Danna Isabella<br />Machado González</h1>
+          <p class="sub">Te invito a celebrar conmigo este momento especial</p>
+          <div class="countdown" id="countdown" aria-live="polite">
+            <div class="cd-box">
+              <div class="cd-num" id="cd-days">–</div>
+              <div class="cd-lbl">Días</div>
+            </div>
+            <div class="cd-box">
+              <div class="cd-num" id="cd-hours">–</div>
+              <div class="cd-lbl">Horas</div>
+            </div>
+            <div class="cd-box">
+              <div class="cd-num" id="cd-mins">–</div>
+              <div class="cd-lbl">Min</div>
+            </div>
+            <div class="cd-box">
+              <div class="cd-num" id="cd-secs">–</div>
+              <div class="cd-lbl">Seg</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" aria-label="Detalles del evento">
+        <h2 class="title">Detalles de la Fiesta</h2>
+        <div class="grid">
+          <div class="info">
+            <h4>Fecha y hora</h4>
+            <p>
+              <strong>30 de agosto de 2025</strong> · <strong>8:00 pm</strong>
+            </p>
+            <div class="actions">
+              <a
+                class="btn btn-outline"
+                id="addCalendar"
+                target="_blank"
+                rel="noopener"
+                >Agregar a Google Calendar</a
+              >
+            </div>
+          </div>
+          <div class="info">
+            <h4>Lugar</h4>
+            <p>carrera 10 # 28-69 · B/ Miradores de San Lorenzo</p>
+            <div class="actions">
+              <a
+                class="btn btn-outline"
+                id="mapLink"
+                target="_blank"
+                rel="noopener"
+                >Ver en Google Maps</a
+              >
+            </div>
+          </div>
+          <div class="info">
+            <h4>Padres</h4>
+            <p>Blademir Machado Palacios · Diana Paola González Tobón</p>
+          </div>
+          <div class="info">
+            <h4>Notas</h4>
+            <p>🎁 Lluvia de sobres</p>
+            <p class="reserved">Se reserva el color lila</p>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="actions">
+          <a id="rsvpBtn" class="btn btn-primary" target="_blank" rel="noopener"
+            >Confirmar asistencia por WhatsApp</a
+          >
+          <a id="shareBtn" class="btn btn-outline" href="#"
+            >Compartir invitación</a
+          >
+        </div>
+        <p class="note">
+          Cada invitado puede recibir su enlace personalizado con su nombre, por
+          ejemplo: <span class="muted">?guest=María+López&passes=2</span>
+        </p>
+      </section>
+    </div>
+
+    <button
+      class="music-btn"
+      id="musicToggle"
+      aria-pressed="false"
+      aria-label="Reproducir música"
+    >
+      ♫
+    </button>
+    <span class="watermark">XV – Danna Isabella</span>
+
+    <script>
+      // ===== Utilidades =====
+      function getParam(name) {
+        const url = new URL(window.location.href);
+        const v = url.searchParams.get(name);
+        return v ? decodeURIComponent(v.replace(/\+/g, " ")) : null;
+      }
+
+      // ===== Cuenta regresiva (hora Bogotá UTC-5) =====
+      const target = new Date("2025-08-30T20:00:00-05:00").getTime();
+      function updateCountdown() {
+        const now = Date.now();
+        let diff = Math.max(0, target - now);
+        const s = Math.floor(diff / 1000);
+        const d = Math.floor(s / 86400);
+        const h = Math.floor((s % 86400) / 3600);
+        const m = Math.floor((s % 3600) / 60);
+        const ss = s % 60;
+        document.getElementById("cd-days").textContent = d;
+        document.getElementById("cd-hours").textContent = h
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("cd-mins").textContent = m
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("cd-secs").textContent = ss
+          .toString()
+          .padStart(2, "0");
+      }
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      // ===== Música de fondo =====
+      const audio = document.getElementById("bgm");
+      const toggle = document.getElementById("musicToggle");
+
+      // Autoplay suave: intentamos reproducir en primer interacción
+      function tryPlay() {
+        audio
+          .play()
+          .then(() => {
+            toggle.setAttribute("aria-pressed", "true");
+          })
+          .catch(() => {});
+      }
+      window.addEventListener("click", tryPlay, { once: true });
+      window.addEventListener("touchstart", tryPlay, { once: true });
+
+      toggle.addEventListener("click", () => {
+        if (audio.paused) {
+          audio.play();
+          toggle.setAttribute("aria-pressed", "true");
+        } else {
+          audio.pause();
+          toggle.setAttribute("aria-pressed", "false");
+        }
+      });
+
+      // ===== RSVP por WhatsApp personalizado =====
+      const guest = getParam("guest") || "Invitado(a)";
+      const passes = getParam("passes") || "1";
+      const phone = "573144576226"; // ← Reemplaza por tu número de WhatsApp en formato internacional (sin +)
+
+      const msg = `Hola, soy ${guest}. Quiero confirmar mi asistencia a los 15 de Danna Isabella el 30 de agosto a las 8:00 pm. Número de pases: ${passes}.`;
+      const waLink = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+      const rsvpBtn = document.getElementById("rsvpBtn");
+      rsvpBtn.href = waLink;
+
+      // ===== Compartir (Web Share API) =====
+      const shareBtn = document.getElementById("shareBtn");
+      shareBtn.addEventListener("click", async (e) => {
+        e.preventDefault();
+        const shareData = {
+          title: "XV – Danna Isabella",
+          text: "Acompáñame el 30 de agosto, 8:00 pm. Aquí los detalles y confirmación.",
+          url: window.location.href,
+        };
+        if (navigator.share) {
+          try {
+            await navigator.share(shareData);
+          } catch (err) {
+            /* ignorar */
+          }
+        } else {
+          navigator.clipboard.writeText(window.location.href);
+          shareBtn.textContent = "Enlace copiado ✔";
+          setTimeout(
+            () => (shareBtn.textContent = "Compartir invitación"),
+            1800
+          );
+        }
+      });
+
+      // ===== Mapa y Calendario =====
+      const address = "carrera 10 # 28-69, Miradores de San Lorenzo";
+      document.getElementById(
+        "mapLink"
+      ).href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+        address
+      )}`;
+
+      const start = "20250830T200000-0500";
+      const end = "20250831T010000-0500"; // 5 horas
+      const details =
+        "Quince años de Danna Isabella. Lluvia de sobres. Se reserva el color lila.";
+      const calUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
+        "XV – Danna Isabella"
+      )}&dates=${start}/${end}&details=${encodeURIComponent(
+        details
+      )}&location=${encodeURIComponent(address)}&ctz=America/Bogota`;
+      document.getElementById("addCalendar").href = calUrl;
+    </script>
+  </body>
+</html>
