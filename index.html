@@ -273,7 +273,6 @@
   </head>
   <body>
     <audio id="bgm" preload="auto" loop>
-      <!-- ⚠️ Asegúrate de tener permiso para usar este audio o sustitúyelo por uno con derechos autorizados. -->
       <source
         src="https://eventobonito.com/wp-content/uploads/2024/02/Thinking-Out-Loud-Violin-Cover-Robert-Mendoza.mp3"
         type="audio/mpeg"
@@ -441,8 +440,7 @@
       // ===== RSVP por WhatsApp personalizado =====
       const guest = getParam("guest") || "Invitado(a)";
       const passes = getParam("passes") || "1";
-      const phone = "573144576226"; // ← Reemplaza por tu número de WhatsApp en formato internacional (sin +)
-
+      const phone = "573144576226";
       const msg = `Hola, soy ${guest}. Quiero confirmar mi asistencia a los 15 de Danna Isabella el 30 de agosto a las 8:00 pm. Número de pases: ${passes}.`;
       const waLink = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
       const rsvpBtn = document.getElementById("rsvpBtn");
@@ -494,3 +492,4 @@
     </script>
   </body>
 </html>
+
