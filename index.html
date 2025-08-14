@@ -439,9 +439,9 @@
 
       // ===== RSVP por WhatsApp personalizado =====
       const guest = getParam("guest") || "Invitado(a)";
-      const passes = getParam("passes") || "1";
+    // const passes = getParam("passes") || "1";
       const phone = "573144576226";
-      const msg = `Hola, soy ${guest}. Quiero confirmar mi asistencia a los 15 de Danna Isabella el 30 de agosto a las 8:00 pm. Número de pases: ${passes}.`;
+      const msg = `Hola, soy ${guest}. Quiero confirmar mi asistencia a los 15 de Danna Isabella el 30 de agosto a las 8:00 pm.`;
       const waLink = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
       const rsvpBtn = document.getElementById("rsvpBtn");
       rsvpBtn.href = waLink;
@@ -492,6 +492,7 @@
     </script>
   </body>
 </html>
+
 
 
 
